@@ -3,9 +3,9 @@ const express = require('express');
 
 var webserver = express();
 
-webserver.enable('trust proxy'); // For using with Heroku
-webserver.use(bodyParser.json());
-webserver.use(bodyParser.urlencoded({ extended: true }));
+// webserver.enable('trust proxy'); // For using with Heroku
+// webserver.use(bodyParser.json());
+// webserver.use(bodyParser.urlencoded({ extended: true }));
 
 webserver.get('/', function (req, res) {
    res.send('Hello World');
