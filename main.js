@@ -1,8 +1,9 @@
-var express = require('express');
+const bodyParser = require('body-parser');
+const express = require('express');
+
 var webserver = express();
 
 webserver.enable('trust proxy'); // For using with Heroku
-webserver.use(limiter);
 webserver.use(bodyParser.json());
 webserver.use(bodyParser.urlencoded({ extended: true }));
 
