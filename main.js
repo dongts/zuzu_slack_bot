@@ -7,11 +7,11 @@ webserver.enable('trust proxy'); // For using with Heroku
 webserver.use(bodyParser.json());
 webserver.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', function (req, res) {
+webserver.get('/', function (req, res) {
    res.send('Hello World');
 })
 
-var server = app.listen(8080, function () {
+var server = webserver.listen(8080, function () {
    var host = server.address().address
    var port = server.address().port
 
