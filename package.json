@@ -1,0 +1,19 @@
+{
+  "name": "zuzu_slack_bot",
+  "version": "1.0.0",
+  "description": "This is a just a fun project using nodejs to create a bot on slack. I'm using it to learn nodejs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dongts/zuzu_slack_bot.git"
+  },
+  "author": "DongTran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dongts/zuzu_slack_bot/issues"
+  },
+  "homepage": "https://github.com/dongts/zuzu_slack_bot#readme"
+}
