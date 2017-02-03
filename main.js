@@ -11,7 +11,7 @@ webserver.get('/', function (req, res) {
    res.send('Hello World');
 })
 
-var server = webserver.listen(8080, function () {
+var server = webserver.listen(process.env.PORT || 8080, function () {
    var host = server.address().address
    var port = server.address().port
 
